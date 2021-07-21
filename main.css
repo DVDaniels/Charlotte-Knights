@@ -1,0 +1,102 @@
+/* Universal Styles */
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation Bar */
+
+.topbar {
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+}
+
+#logo {
+    height: 4rem;
+    width: auto;
+    float: right;
+}
+
+.navbar {
+    height: 4rem;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2;
+    background-color: #b89e67;
+    color: cornsilk;
+}
+
+.navbar a {
+    color: rgb(255, 233, 134);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.leftNav {
+    grid-column: 1;
+    display: flex;
+}
+
+.leftNav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftNav > ul > li {
+    padding: .5rem;
+}
+
+.rightNav {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    justify-self: flex-end;
+    margin-right: 2rem;
+}
+
+.rightNav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.rightNav > ul > li {
+    padding: .5rem;
+}
+
+/* Banner */
+
+#mainBanner {
+    width: 100vw;
+    height: auto;
+}
+
+#bannerBlock {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    height: 10rem;
+    background-color: #000;
+}
