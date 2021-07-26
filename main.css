@@ -1,14 +1,21 @@
 /* Universal Styles */
 
+header {
+    
+}
+
 body {
-    margin: 0px;
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, auto, auto;
 }
 
 /* Navigation Bar */
 
 .topbar {
     height: 4rem;
+    width: 100%;
     background-color: rgb(0, 0, 0);
 }
 
@@ -16,15 +23,13 @@ body {
     height: 4rem;
     width: auto;
     float: right;
+    margin-right: 1rem;
 }
 
 .navbar {
-    height: 4rem;
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 2;
     background-color: #b89e67;
     color: cornsilk;
+    display: grid;
 }
 
 .navbar a {
@@ -37,8 +42,8 @@ body {
 }
 
 .leftNav {
-    grid-column: 1;
     display: flex;
+    grid-column: 1 / 2;
 }
 
 .leftNav > ul {
@@ -52,18 +57,15 @@ body {
 }
 
 .rightNav {
-    display: flex;
-    flex-direction: row;
-    grid-column: 2;
-    justify-self: flex-end;
-    margin-right: 2rem;
+    grid-column: 2 / 3;
 }
 
 .rightNav > ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    
+    justify-content: flex-end;
+    margin-right: 1rem;
 }
 
 .rightNav > ul > li {
@@ -73,18 +75,19 @@ body {
 /* Banner */
 
 #mainBanner {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
 #bannerBlock {
     position: absolute;
-    top: 50%;
-    width: 50%;
+    top: 30%;
+    width: 35%;
     left: 0;
     background-color: #000;
     color: #fff;
     padding: 2rem;
+    text-align: right;
 }
 
 
@@ -99,4 +102,6 @@ body {
 footer {
     height: 10rem;
     background-color: #000;
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
 }
