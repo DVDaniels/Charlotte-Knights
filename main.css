@@ -90,7 +90,30 @@ body {
     text-align: right;
 }
 
+/* Ammenities */
 
+.ammenitiesContainer {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 4;
+    height: 18rem;
+    justify-items: center;
+}
+
+.ammenities1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.ammenities2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.ammenities3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
 
 
 
@@ -100,8 +123,29 @@ body {
 /* Footer */
 
 footer {
-    height: 10rem;
+    height: 5rem;
     background-color: #000;
     grid-row: 4 / 5;
     grid-column: 1 / -1;
+    font-size: .8rem;
+    line-height: .3rem;
+    padding: 5rem;
+}
+
+.footerMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerMenu a {
+    color: #fff;
+    margin: 0 .5rem;
+    text-decoration: none;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
 }
