@@ -96,25 +96,51 @@ body {
     display: grid;
     grid-template-rows: 2;
     grid-template-columns: 4;
-    height: 18rem;
-    justify-items: center;
+    height: auto;
+    margin: 1rem;
+    border: 1px solid rgb(186, 185, 185);
 }
 
 .ammenities1 {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    padding: 1rem;
 }
 
 .ammenities2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    padding: 1rem;
 }
 
 .ammenities3 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+    padding: 1rem;
 }
 
+.ammenities4 {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+    padding: 1rem;
+}
+
+.ammenities5 {
+    grid-row: 2 / 2;
+    grid-column: 2 / 3;
+    padding: 1rem;
+}
+
+.ammenities6 {
+    grid-row: 2 / 2;
+    grid-column: 3 / 4;
+    padding: 1rem;
+}
+
+.mainImages {
+    width: 250px;
+    height: 150px;
+}
 
 
 
