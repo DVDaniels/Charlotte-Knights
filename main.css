@@ -97,7 +97,7 @@ body {
     grid-template-rows: 2;
     grid-template-columns: 4;
     height: auto;
-    margin: 1rem;
+    margin: 2rem;
     border: 1px solid rgb(186, 185, 185);
 }
 
